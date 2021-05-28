@@ -1,0 +1,104 @@
+﻿<Window x:Class="ProjectCloth.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectCloth"
+        mc:Ignorable="d"
+        Title="Авторизация в системе" Height="600" Width="800" MinHeight="600" MinWidth="800" Background="#d1eefc">
+    
+    <Grid>
+
+        <StackPanel Style="{StaticResource StpCenter}">
+
+            <TabControl Width="600px" Height="400px" Background="#fffcd6">
+
+                <TabItem>
+
+                    <TabItem.Header>Авторизация</TabItem.Header>
+
+                    <TabItem.Content>
+
+                        <StackPanel Style="{StaticResource StpCenter}">
+
+                            <StackPanel Style="{StaticResource StpCenterOrienHor}">
+
+                                <TextBlock Style="{StaticResource TxtDefault}" Text="Введите логин:"/>
+                                <TextBox Style="{StaticResource TxbDefaul}" Name="Txb_Login"/>
+
+                            </StackPanel>
+
+                            <StackPanel Style="{StaticResource StpCenterOrienHor}">
+
+                                <TextBlock Style="{StaticResource TxtDefault}" Text="Введите пароль:"/>
+                                <PasswordBox Name="Pssb_Password"/>
+                                <TextBox Name="Txb_ShowPassword" Style="{StaticResource TxbDefaul}" Margin="10 0 0 0" Visibility="Collapsed"/>
+
+                            </StackPanel>
+                            
+                            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 -23 -20 0">
+
+                                <CheckBox Margin="0 0 -117 0" Name="Chb_ShowPassword" Click="Chb_ShowPassword_Click">
+
+                                    <TextBlock Margin="0 -2 0 0" FontSize="11pt" Text="Показать пароль"/>
+
+                                </CheckBox>
+
+                            </StackPanel>
+
+                            <Button Style="{StaticResource BtnDefault}" Margin="74 10 0 0" Name="Btn_LogIn" Content="Войти" Click="Btn_LogIn_Click"/>
+
+                        </StackPanel>
+
+                    </TabItem.Content>
+
+                </TabItem>
+
+                <TabItem>
+
+                    <TabItem.Header> Регистрация для заказчика</TabItem.Header>
+
+                    <TabItem.Content>
+
+                        <StackPanel Style="{StaticResource StpCenter}">
+
+                            <StackPanel Style="{StaticResource StpCenterOrienHor}">
+
+                                <TextBlock Style="{StaticResource TxtDefault}" Text="Введите логин:"/>
+                                <TextBox Style="{StaticResource TxbDefaul}" Name="Txb_NewLogin"/>
+
+                            </StackPanel>
+
+                            <StackPanel Style="{StaticResource StpCenterOrienHor}">
+
+                                <TextBlock Style="{StaticResource TxtDefault}" Text="Введите пароль:"/>
+                                <PasswordBox Name="Pssb_NewPassword"/>
+                                <TextBox Name="Txb_ShowNewPassword" Style="{StaticResource TxbDefaul}" Visibility="Collapsed"/>
+
+                            </StackPanel>
+
+                            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 -23 -20 0">
+
+                                <CheckBox Margin="0 0 -117 0" Name="Chb_ShowNewPassword" Click="Chb_ShowNewPassword_Click">
+
+                                    <TextBlock Margin="0 -2 0 0" FontSize="11pt" Text="Показать пароль"/>
+
+                                </CheckBox>
+
+                            </StackPanel>
+
+                            <Button Style="{StaticResource BtnDefault}" FontSize="11pt" Width="150px" HorizontalAlignment="Right" Name="Btn_Registrarion" Content="Зарегистрироваться" Click="Btn_Registrarion_Click"/>
+
+                        </StackPanel>
+
+                    </TabItem.Content>
+
+                </TabItem>
+
+            </TabControl>
+
+        </StackPanel>
+
+    </Grid>
+
+</Window>

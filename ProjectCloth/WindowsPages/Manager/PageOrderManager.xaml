@@ -1,0 +1,27 @@
+﻿<Page x:Class="ProjectCloth.WindowsPages.Manager.PageOrderManager"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjectCloth.WindowsPages.Manager"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageOrderManager">
+
+    <Grid>
+
+        <StackPanel Style="{StaticResource StpCenter}">
+
+            <StackPanel Style="{StaticResource StpCenter}" Orientation="Vertical">
+
+                <Button Name="Btn_ListOrder" Style="{StaticResource BtnDefault}" Content="Список заказов" Width="200px" VerticalContentAlignment="Center"/>
+                <Button Name="Btn_ChangeManager" Style="{StaticResource BtnDefault}" Content="Изменить менеджера" Width="200px" VerticalAlignment="Center"/>
+                <Button Name="Btn_ChengeStatus" Style="{StaticResource BtnDefault}" Content="Изменить статус" Width="200 px" VerticalAlignment="Center"/>
+
+            </StackPanel>
+            
+        </StackPanel>
+        
+    </Grid>
+
+</Page>
